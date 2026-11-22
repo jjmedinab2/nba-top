@@ -26,7 +26,7 @@ for entry in root.findall('atom:entry', ns):
     desc_el = media_group.find('media:description', ns) if media_group is not None else None
     desc = desc_el.text if desc_el is not None and desc_el.text else ""
 
-    if re.search(r'\btop\b', title, re.IGNORECASE) or re.search(r'\btop\b', desc, re.IGNORECASE):
+    if "/shorts/" not in link and not re.search(r'(full game highlights|nightly recap|daily recap|#shorts)', title, re.IGNORECASE):
         img_url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
         contenido_html = f'<img src="{img_url}" /><br><br>{escape(desc).replace(chr(10), "<br>")}'
         
