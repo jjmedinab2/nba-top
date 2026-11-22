@@ -3,16 +3,16 @@ import xml.etree.ElementTree as ET
 import re
 from html import escape
 
-FEED_URL = "https://" + "://youtube.com" + "/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ"
+FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ"
 
 req = urllib.request.Request(FEED_URL, headers={'User-Agent': 'Mozilla/5.0'})
 xml_data = urllib.request.urlopen(req).read()
 root = ET.fromstring(xml_data)
 
 ns = {
-    'atom': 'http://' + 'www.w3.org' + '/2005/Atom',
-    'yt': 'http://' + '://youtube.com' + '/xml/schemas/2015',
-    'media': 'http://' + '://yahoo.com' + '/mrss/'
+    'atom': 'http://www.w3.org/2005/Atom',
+    'yt': 'http://www.youtube.com/xml/schemas/2015',
+    'media': 'http://search.yahoo.com/mrss/'
 }
 
 items = []
@@ -27,7 +27,7 @@ for entry in root.findall('atom:entry', ns):
     desc = desc_el.text if desc_el is not None and desc_el.text else ""
 
     if re.search(r'\btop\b', title, re.IGNORECASE) or re.search(r'\btop\b', desc, re.IGNORECASE):
-        img_url = "https://" + "://ytimg.com" + f"/vi/{video_id}/hqdefault.jpg"
+        img_url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
         contenido_html = f'<img src="{img_url}" /><br><br>{escape(desc).replace(chr(10), "<br>")}'
         
         items.append(f"""
