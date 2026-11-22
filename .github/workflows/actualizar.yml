@@ -1,0 +1,22 @@
+name: Actualizar RSS NBA
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ejecutar filtro
+        run: python3 filtrar.py
+      - name: Guardar feed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add feed.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizar feed" && git push)
