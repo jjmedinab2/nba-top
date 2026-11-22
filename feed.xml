@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>NBA Top Videos</title>
+    <id>nba-top-feed-custom</id>
+    
+        <entry>
+            <id>yt:video:QIZUemPDDmU</id>
+            <title>NBA&#x27;s Nightly Recap | November 21, 2026</title>
+            <link href="https://www.youtube.com/watch?v=QIZUemPDDmU"/>
+            <published>2026-11-22T07:23:42+00:00</published>
+            <updated>2026-11-22T07:23:42+00:00</updated>
+            <content type="html">&lt;img src=&quot;https://i.ytimg.com/vi/QIZUemPDDmU/hqdefault.jpg&quot; /&gt;&lt;br&gt;&lt;br&gt;0:00 Trail Blazers at Knicks&lt;br&gt;3:40 Bucks at 76ers&lt;br&gt;6:54 Pelicans at Spurs&lt;br&gt;9:55 Celtics at Kings&lt;br&gt;13:21 Grizzlies at Timberwolves&lt;br&gt;16:10 Clippers at Mavericks&lt;br&gt;19:23 Player of the night&lt;br&gt;21:04 Top 10 Plays of the night&lt;br&gt;23:51 NBA Standings&lt;br&gt;&lt;br&gt;Never miss a moment with the latest news, trending stories and highlights to bring you closer to your favorite players and teams.&lt;br&gt;Download now ➡ https://nba.smart.link/NBAApp-YTDes&lt;br&gt;&lt;br&gt;Subscribe to the NBA: https://on.nba.com/2JX5gSN</content>
+        </entry>
+        <entry>
+            <id>yt:video:YodCnYfQvmU</id>
+            <title>NBA&#x27;s Top 10 Plays of the Night | November 21, 2026</title>
+            <link href="https://www.youtube.com/watch?v=YodCnYfQvmU"/>
+            <published>2026-11-22T07:11:24+00:00</published>
+            <updated>2026-11-22T07:11:24+00:00</updated>
+            <content type="html">&lt;img src=&quot;https://i.ytimg.com/vi/YodCnYfQvmU/hqdefault.jpg&quot; /&gt;&lt;br&gt;&lt;br&gt;NBA&amp;#x27;s Top 10 Plays of the Night&lt;br&gt;&lt;br&gt;Never miss a moment with the latest news, trending stories and highlights to bring you closer to your favorite players and teams.&lt;br&gt;Download now ➡ https://nba.smart.link/NBAApp-YTDes&lt;br&gt;&lt;br&gt;Subscribe to the NBA: https://on.nba.com/2JX5gSN</content>
+        </entry>
+</feed>
